@@ -119,7 +119,7 @@ const CELLS: Cell[] = [
     note: 'Frost holds the ground until late, which is when deliveries can go to the door.',
     kind: 'photo',
     seed: 'hollow-joinery-morning-mist',
-    alt: 'A figure seated on a long bench on open ground under a wide sky',
+    alt: 'A person seated alone on a long timber bench on open dunes under a wide sky',
     span: 'lg:col-span-2',
     frame: 'aspect-[4/3] lg:aspect-auto lg:h-[370px]',
   },
@@ -355,16 +355,17 @@ export default function App() {
 
             <div className="lg:col-span-5 lg:col-start-8 lg:mt-20">
               <Reveal>
-                {/* Atmospheric rather than a product shot: a bench against a
-                    worn workshop wall, which is the only register the stock
-                    source can supply honestly. Alt text says what is in it. */}
-                <figure className="frame aspect-[4/5] w-full lg:aspect-[5/6]">
+                {/* A weathered bench against a peeling plaster wall. The source
+                    carries a painted sign high in the frame, so the crop
+                    wrapper shifts the image up and clips it at every
+                    breakpoint. Alt text describes only what is in frame. */}
+                <figure className="hero-crop aspect-[4/5] w-full lg:aspect-[5/6]">
                   <img
-                    src="https://picsum.photos/seed/hollow-joinery-ribbed/1400/1680"
-                    alt="An old bench standing against a weathered, peeling plaster wall"
+                    src="https://picsum.photos/seed/hollow-joinery-ribbed/1400/2100"
+                    alt="A weathered bench against a peeling plaster wall, standing on patterned tile floor"
                     loading="eager"
                     width={1400}
-                    height={1680}
+                    height={2100}
                   />
                 </figure>
               </Reveal>
@@ -516,11 +517,11 @@ export default function App() {
                     <p className="text-[0.8125rem] font-semibold tracking-[0.06em] text-[var(--color-mute)] md:col-span-2">
                       {s.when}
                     </p>
-                    <div className="md:col-span-6">
+                    <div className="md:col-span-9">
                       <h3 className="font-display text-[1.25rem] font-semibold tracking-[-0.025em] text-[var(--color-ink)]">
                         {s.title}
                       </h3>
-                      <p className="mt-2.5 max-w-[58ch] text-[0.9375rem] leading-[1.65] text-[var(--color-body)]">
+                      <p className="mt-2.5 max-w-[62ch] text-[0.9375rem] leading-[1.65] text-[var(--color-body)]">
                         {s.body}
                       </p>
                     </div>
@@ -580,10 +581,18 @@ export default function App() {
                     </div>
                     <div>
                       <dt className="text-[0.8125rem] font-semibold text-[var(--color-on-accent)]">
-                        Write
+                        Open
                       </dt>
                       <dd className="mt-1.5 text-[0.9375rem] text-[var(--color-on-accent-mute)]">
-                        studio@hollowjoinery.co.uk
+                        Thursdays and Saturdays, ten until four
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-[0.8125rem] font-semibold text-[var(--color-on-accent)]">
+                        Ring the workshop
+                      </dt>
+                      <dd className="mt-1.5 text-[0.9375rem] text-[var(--color-on-accent-mute)]">
+                        01373 462 118
                       </dd>
                     </div>
                   </dl>
